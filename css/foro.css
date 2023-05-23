@@ -1,0 +1,491 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url("../TPO---CAC2023/img/fondo_foro.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    position: center;
+    background-size: cover;
+    z-index: 3;
+}
+
+.logo-img{
+    width: 100px;
+    padding: 2px 10px;
+}
+.mi_perfil{
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    color: yellowgreen;
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 0.125rem;
+    
+}
+
+
+header {
+   
+    
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.section1{
+    background-image: 
+    url(https://i.pinimg.com/originals/4e/02/b9/4e02b987da9d2c3a8c27abc9afb3746a.jpg);
+    background-position: center;
+    background-size: center;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    object-fit: cover;
+    
+}
+
+button{
+    background-color: rgba(122, 122, 122, 0.938);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.buscador{
+    display: flex;
+    justify-self:flex-end;
+    flex-flow: row wrap;
+}
+#buscadorBoton{
+    border-radius: 400px;
+    display: flex;
+}
+
+.headerlogo{
+    padding: 0.625rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+input{
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 10;
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    font-size: 10px;
+    border: 1px solid;
+    transition: all .7s ease;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    opacity: 100%;
+}
+
+.place{
+    display: flex;
+    justify-content: flex-end;
+}
+
+::placeholder{
+    color: grey;
+}
+
+.form{
+    flex-flow: colum wrap;
+    display: flex;
+    
+}
+
+
+.menu{
+    color: rgb(150, 214, 89);
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight:bold;
+    font-size:1.3rem;
+    text-decoration:double;    
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    text-align: center;
+    min-width: 50px;
+    width: 100%;
+    background-image: linear-gradient(135deg,#080808, #28282b, #44464d, #5d5d6b, #7d7692, #8b848b,#797577
+    );
+}
+
+.menu-horizontal{
+    list-style: none ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal a{
+    display: flex;
+    padding: 15px 20px;
+    color: red;
+    text-decoration: none;
+}
+
+.menu-horizontal li:hover{
+    background-color: green;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: aquamarine;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: #efefef;
+    padding: 15px 15px 15px 20px;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none ;
+    width: 200px;
+    background-color: #f54fd9;
+}
+
+.caja{
+    
+    color: rgb(150, 214, 89);
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight:bold;
+    font-size:1.3rem;
+    text-decoration:double;    
+    opacity:500;
+    text-align: center;
+    margin: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 30px;
+    
+}
+.caja3{
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+
+  /* Ajusta el espacio para el contenido principal */
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 6.25rem;
+    margin-left: 0rem;
+    align-items: center;
+}
+
+
+/* Estilos para la barra lateral */
+#sidebar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: -12.5rem;
+    width: 12.5rem;
+    margin-top: 0.7rem;
+    height: 100%;
+    background-color:  #080e37 ;
+    background-image: linear-gradient(to bottom,#020111, #050566, #040491, #2020ee,#f3f3fc8f);
+    font-family: 'Chakra Petch', sans-serif;
+    color: #FFF;
+    align-items: center;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+    
+}
+
+#toggle-sidebar{
+    display: none;
+}
+  
+#toggle-sidebar:checked + #sidebar {
+    left: 0;
+}
+  
+
+
+/* Estilos para el botón de mostrar/ocultar la barra lateral */
+#boton_barra{    
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-right: 0.625rem;
+    padding: 0.3rem;
+    font-size: 1.25rem;
+    background-color: #050566;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+  
+
+#advertencia{
+    order: 1;
+    background-color: #ffe65d;
+    border-color: #695c08;
+    border-style:dashed;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 0rem;    
+}
+
+.h5{
+    color: #000;
+    font-size: small;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+}
+
+.lista_advertencias{
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-size: medium;
+    text-align: left;
+    order: 2;
+}
+
+h2,h3,h4,h5{  
+    font-family: 'Chakra Petch', sans-serif; 
+}
+
+#titulo{
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+#titulo_pagina{
+    margin-right: auto;
+    color: #fff;
+}
+
+/*crear discusion*/
+#boton_discusion{
+    background-color: #0b7e0f;
+    color: #fff;
+    width: 7.5rem;
+    height: 1.875rem;
+    text-decoration: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+#boton_discusion:hover{
+    background-color: #4CAF50;
+}
+  
+
+/*lista de discusiones*/
+
+#contenedor_grande{
+    display: flex;
+    flex-direction: column;
+}
+
+#Juegos, #Hardware, #Software {
+    display: flex;
+    flex-direction: column;
+    width: 62.5rem;
+	padding: 0;
+	margin-top: 1.25rem;
+    background-image: linear-gradient(to left, #080e37, #62b1e1, #a2d0ed,#62b1e1, #080e37);
+
+}
+
+#Juegos h2, #Hardware h2, #Software h2{
+    margin-left: 0.938rem;
+    color: #e1e1eb;
+} 
+
+
+#Juegos{
+    order: 2;
+}
+
+#Hardware{
+    order: 3;
+}
+
+#Software{
+    order: 4;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li {
+	padding: 0.625rem;
+    border-top: 0.063rem solid #000;
+}
+
+nav li a {
+	color: #0e027c;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: #160a85;
+}
+
+
+ span{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+/*footer*/
+.pie-pagina{
+    width: 100%;
+    background-color: #23293f;
+}
+
+.pie-pagina .grupo-1{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.red-social{
+    display: flex;
+    justify-content: center;
+}
+
+.red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #a7e3ff;
+    margin-right: 10px;
+    background-color: #151822;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.red-social a:hover{
+    color: #f54fd9;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.grupo-2{
+    background-color: #151822;
+    padding: 15px 10px;
+    text-align: center;
+    color: #d1cdcf;
+    font-size: 20px;
+}
+
+.box p{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+}
+
+/*responsividad*/
+
+@media screen and (max-width:800px) {
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.section1{
+    width: 100%;
+    margin: 0 auto;
+}
+  
+#toggle-sidebar:checked + #sidebar {
+    left: 0;
+}
+
+body{
+    width: auto;
+}
+
+menu{
+    margin: 0;
+    width: 90%;
+    font-size: small;
+}
+
+#titulo{
+    width: 75%;
+}
+
+
+main, #contenedor_grande {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#Juegos, #Hardware, #Software,#advertencia {
+    width: 75%;
+    font-size: small;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    grid-gap: 10px;
+    padding: 25px 0px;
+}
+  
+}

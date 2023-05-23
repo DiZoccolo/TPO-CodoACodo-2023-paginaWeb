@@ -1,0 +1,220 @@
+html{
+    display: flex;
+}
+
+body{
+    background-image: url("https://wallpaperset.com/w/full/6/c/2/99021.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+
+header{
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+#fieldset{
+    background: rgb(4,7,52);
+    background: radial-gradient(circle, rgba(4,7,52,1) 35%, rgba(1,10,0,1) 68%);
+    border-style: none;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+
+#formulario_creacion{
+    background: none;
+    margin: auto;
+    width: 100%;
+}
+
+.grupo{
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    margin: 0;
+    background: none;
+    display: block;
+    width: 100%;
+    border-color: rgb(8, 80, 8);
+    color: aliceblue;
+}
+
+input:focus{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 2.4rem;
+    
+}
+
+input:focus~label{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: .9rem;
+    color: rgb(39, 237, 240);
+}
+
+
+#condiciones{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#checkbox{
+    position: relative;
+    left: 50%;
+    width: auto;
+}
+
+a{
+    color: rgb(0, 255, 0);
+    text-align: center;
+    width: auto;
+}
+
+a:hover{
+    text-decoration: none;
+    width: auto;
+}
+
+.flex_boton{
+    display: flex;
+    justify-content: center;
+}
+
+#button{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    border-radius: 6px;
+    width: auto;
+    border: none;
+    left: 49%;
+}
+
+#button:hover{
+    background-color: rgb(176, 225, 248);
+    color: black;
+    transition: 0.25s;
+    transform: translate(2px, 2px);
+}
+
+
+#mensajeError{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: rgb(0, 255, 0);
+    padding-top: 20px;
+}
+
+/* footer */
+.pie-pagina{
+    width: 100%;
+    background-color: #23293f;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.red-social{
+    display: flex;
+    justify-content: center;
+}
+
+.red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #a7e3ff;
+    margin-right: 10px;
+    background-color: #151822;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.red-social a:hover{
+    color: #f54fd9;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;  
+}
+
+figure{
+    position: static;
+    width: 50%;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.grupo-2{
+    background-color: #151822;
+    padding: 15px 10px;
+    text-align: center;
+    color: #d1cdcf;
+    font-size: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #fieldset{
+        width: 90%;
+    }
+    img{
+        width: 6rem;
+    }
+    
+}
